@@ -409,7 +409,7 @@
                 <div class="feedback-form">
                     <h2>Get in touch</h2>
 
-                    <form id="contactForm" action="sendemail.php" method="POST">
+                    <form id="contactForm" method="POST" data-netlify="true">
                         <div class="form-group">
                             <label for="InputName">Name</label>
                             <input type="text" name="name" required="" class="form-control" id="InputName"
@@ -430,7 +430,7 @@
                             <textarea class="form-control" rows="4" required="" name="message" id="message-text"
                                       placeholder="Write message"></textarea>
                         </div>
-
+                            <div data-netlify-recaptcha="true"></div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
